@@ -1,0 +1,66 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "0.0.1",
+
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node server.js --config webpack.dev.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors -p",
+    "server": "cross-env NODE_ENV=production node server.prod.js",
+    "test": "cross-env NODE_ENV=test mocha ./test/*.js",
+    "test1": "cross-env NODE_ENV=test mocha ./test/test1.js",
+    "test2": "cross-env NODE_ENV=test mocha ./test/test2.js",
+    "test3": "cross-env NODE_ENV=test --compilers js:babel-core/registe/register mocha ./test/test2.js",
+    "test4": "cross-env NODE_ENV=test mocha --compilers js:babel-core --compilers js:babel-core/registe/register ./test/test4.js",
+    "test-react": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register ./test/test4.js"
+
+  },
+
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
+  },
+  "devDependencies": {
+    "appcache-webpack-plugin": "^1.2.0",
+    "autoprefixer": "^6.3.1",
+    "babel": "^6.0.0",
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^4.1.2",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-plugin-transform-react-constant-elements": "6.3.13",
+    "babel-plugin-transform-react-inline-elements": "6.3.13",
+    "babel-plugin-transform-react-remove-prop-types": "0.1.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-react": "^6.0.0",
+    "babel-preset-react-hmre": "1.0.1",
+    "babel-preset-stage-2": "^6.0.0",
+    "babel-polyfill": "^6.0.16",
+    "babel-plugin-transform-class-properties": "^6.4.0",
+    "cross-env": "1.0.6",
+    "css-loader": "^0.23.0",
+    "cssnano": "^3.0.1",
+    "extract-text-webpack-plugin": "0.9.1",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^1.6.1",
+    "postcss-focus": "^1.0.0",
+    "postcss-loader": "^0.8.0",
+    "postcss-reporter": "^1.2.1",
+    "postcss-import": "^7.0.0",
+    "postcss-simple-vars": "^1.0.0",
+    "precss": "^1.4.0",
+    "react-transform-hmr": "^1.0.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.11.0",
+    "optimist": "~0.6.0",
+    "mocha": "^2.5.3",
+    "jsdom": "^9.4.1",
+    "expect": "^1.8.0",
+    "history": "^1.17.0"
+  },
+
+  "keywords": [
+    "yeoman-generator"
+  ]
+}
+
