@@ -1,5 +1,6 @@
 import React from 'react';
 import expect from 'expect'
+import { mount, shallow } from 'enzyme'
 import Box from '../src/js/Box';
 
 import { jsdom } from 'jsdom'
@@ -17,4 +18,13 @@ describe('Array', function() {
         });
     });
 });
+
+describe('Box Components', function () {
+
+    it('标题应该是 `welcome es6 world!`', function () {
+        const wrapper = mount(<Box/>);
+        expect(wrapper.find())
+    })
+
+})
 

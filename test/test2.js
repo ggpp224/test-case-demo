@@ -1,3 +1,7 @@
+/**
+ * ES6
+ */
+
 
 import expect from 'expect'
 
