@@ -23,7 +23,7 @@ describe('Box Components', function () {
 
     it('标题应该是 `welcome es6 world!`', function () {
         const wrapper = mount(<Box/>);
-        expect(wrapper.find())
+        expect(wrapper.find('h1').at(0).text()).toBe('welcome es6 world!');
     })
 
 })
